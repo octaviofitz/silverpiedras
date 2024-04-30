@@ -1,0 +1,8 @@
+.banner{
+    margin: 1.5rem 0;
+}
+
+.banner .img{
+    width: 85vw;
+    border-radius: 10%;
+}

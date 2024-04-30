@@ -1,0 +1,39 @@
+.cards{
+    margin: 3rem;
+}
+
+.cards .titulo{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.cards .tarjeta{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 2rem;
+}
+
+.cards .img{
+    width: 75vw;
+    border-radius: 10% 10% 0 0;
+}
+
+.cards .tarjeta .texto .tituloVolanta{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.cards .tarjeta .texto{
+    font-weight: 500;
+    background-color: cadetblue;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 15px 15px;
+}
+
+.cards .tarjeta .texto .boton{
+    font-weight: 700;
+    font-size: 1.35rem;
+}
