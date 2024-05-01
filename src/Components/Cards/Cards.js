@@ -1,29 +1,47 @@
 import React from 'react';
 
-import Card1 from '../IMG/BannerPrincipal.png';
-import Card2 from '../IMG/BannerPrincipal.png';
+import Card1 from '../IMG/BannerDesktop.png';
+import Card2 from '../IMG/BannerDesktop.png';
+import Flecha from '../IMG/flecha.png'
 
 import './cards.css';
 
 function Cards() {
     return (
         <section className='cards'>
-            <h1 className='titulo'>Silver Piedras</h1>   
-            <div>
-                <div className='tarjeta'>
-                    <img src={Card1} alt='' className='img' />
-                    <div className='texto'>
-                        <h2 className='tituloVolanta'>Piedras Sanitarias</h2>
-                    <p className='volanta'>lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    <p className='boton' >Ver más 🠲</p>
-                    </div >
+            <h1 className='titulo'>Silver: Reluciente Diatomita</h1>   
+            <div className='container'>
+            <article className='tarjeta'>
+                <img src={Card1} className='img' alt='Silver' />
+                <div className='textos'>
+                <h2>Absorbente sanitario</h2>
+                <p>Debido a su estructura porosa y la alta pureza del mineral posee una gran calidad de absorsión</p>
+                <div className='containerBoton'>
+                    <div>
+                    <p className='boton'>Ver más</p>
+                    </div>
+                    <div>
+                    <img src={Flecha} className='flecha' />
+                    </div>
                 </div>
-                <div className='tarjeta'>
-                    <img src={Card2} alt='' className='img' />
-                    <h2 className='tituloVolanta'>Piedras Sanitarias</h2>
-                    <p className='volanta'>lorem lorem lorem lorem lorem lorem lorem lorem</p>
-                    <p className='boton'>Ver más 🠲</p>
                 </div>
+            </article>
+
+            <article className='tarjeta'>
+                <img src={Card1} className='img' alt='Silver' />
+                <div className='textos'>
+                <h2>Retención de olores</h2>
+                <p>Sus microporos internos favorecen la retención de olores e inhibición de bacterias</p>
+                <div className='containerBoton'>
+                    <div>
+                    <p className='boton'>Ver más</p>
+                    </div>
+                    <div>
+                    <img src={Flecha} className='flecha' />
+                    </div>
+                </div>
+                </div>
+            </article>
             </div>
         </section>
     );

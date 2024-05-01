@@ -1,0 +1,21 @@
+.producido .titulo{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+}
+
+.producido .img{
+    display: flex;
+    width: 80vw;
+    margin: 2rem auto 1rem;
+    border-radius: 13px;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+@media (min-width: 1024px){
+    .producido .img{
+        width: 40vw;
+    }
+}

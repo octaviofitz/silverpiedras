@@ -6,3 +6,31 @@
 #Navbar{
     background-color: #f8f8ff!important;
 }
+
+#Navbar .links{
+    font-weight: 600;
+    color: black;
+    padding: 0 2rem;
+    font-size: 1.25rem;
+}
+
+#Navbar .links:hover{
+    color: #004E6F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media(min-width: 768px){
+    #Navbar .logo{
+        width: 18vw;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    #Navbar .logo{
+        width: 10vw;
+    }
+}
+

@@ -9,9 +9,10 @@ function Footer() {
         <section className='footer'>
             <div>
                 <img src={logoFooter} alt='Logo Silver Piedras' className='logo' />
+                </div>
+                <div>
                 <p className='ubicacion'>Argentina 🏠</p>
-            </div>
-            <p>footer</p>
+                </div>
         </section>
     );
 }

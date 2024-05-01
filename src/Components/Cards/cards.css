@@ -1,39 +1,73 @@
-.cards{
-    margin: 3rem;
-}
-
 .cards .titulo{
+    text-align: center;
+    margin: 1rem 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 2rem;
 }
 
-
-.cards .tarjeta{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 2rem;
+.cards .container .tarjeta{
+    margin: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
-.cards .img{
-    width: 75vw;
-    border-radius: 10% 10% 0 0;
+.cards .container .tarjeta .img{
+    width: 80vw;
+    border-radius: 13px 13px 0 0;
 }
 
-.cards .tarjeta .texto .tituloVolanta{
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-.cards .tarjeta .texto{
-    font-weight: 500;
-    background-color: cadetblue;
+.cards .container .tarjeta .textos{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 0 0 13px 13px;
     text-align: left;
-    padding: 1rem 1.5rem;
-    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+    padding-left: 1.2rem;
+    background-color: #fff;
 }
 
-.cards .tarjeta .texto .boton{
+.cards h2{
+    font-weight: 600;
+}
+
+.cards .container .tarjeta .textos .containerBoton{
+    display: flex;
+    justify-content: baseline;
+    cursor: pointer;
+}
+
+.cards .container .tarjeta .textos .boton{
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+}
+
+.cards .container .tarjeta .textos .flecha{
+    width: 3rem;
+    margin-left: 0.75rem;
+    margin-top: -0.25rem;
+}
+
+@media (min-width: 1024px){
+    .cards .titulo{
+        text-align: center;
+        margin: 3rem 1rem 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    .cards .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cards .container .tarjeta .img,
+    .cards .container .tarjeta .textos{
+        width: 40vw;
+    }
+
+    .cards .container .tarjeta .textos{
+        padding: 1rem 2rem;
+    }
 }

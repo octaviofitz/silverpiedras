@@ -1,7 +1,8 @@
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #f8f8ff;
+    padding-bottom: 2rem;
 }
 
 .footer .logo{
@@ -10,8 +11,34 @@
     margin: 2rem auto 1.5rem;
 }
 
-.footer .ubicacion{
+.footer .ubicacion {
     color: #004E6F;
     text-transform: uppercase;
     font-weight: 700;
+    border: 2px solid #004E6F;
+    border-radius: 50px; /* Aumentamos el valor para hacer los bordes más redondeados */
+    padding: 0.35rem 0;
+    margin: 0 20vw;
+    /* Ajustamos los valores de border-radius para cada esquina */
+    border-top-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+    border-bottom-left-radius: 50px 50px;
+}
+
+@media (min-width: 768px){
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: -1rem;
+    }
+
+    .footer .logo{
+        width: 22vw;
+    }
+
+    .footer .ubicacion{
+        margin: 3.5rem 0 0;
+        padding: 0.5rem 4rem;
+    }
 }

@@ -14,10 +14,10 @@ function BasicExample() {
         <img src={logo} alt='Logo Silver Piedras' className='logo' />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">NOSOTROS</Nav.Link>
-            <Nav.Link href="#link">PRODUCTO</Nav.Link>
-            <Nav.Link href="#link">RUBICAT</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link href="#home" className='links'>Nosotros</Nav.Link>
+            <Nav.Link href="#link" className='links'>Producto</Nav.Link>
+            <Nav.Link href="#link" className='links'>Rubicat</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
