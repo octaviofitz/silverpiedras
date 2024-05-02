@@ -1,13 +1,19 @@
 .cards .titulo{
     text-align: center;
-    margin: 1rem 1rem;
-    text-transform: uppercase;
+    margin: 0.75rem 1rem 1rem;
     font-weight: 700;
 }
 
+.cards .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
 .cards .container .tarjeta{
-    margin: 1.5rem;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: 1rem;
 }
 
 .cards .container .tarjeta .img{
@@ -51,14 +57,14 @@
 @media (min-width: 1024px){
     .cards .titulo{
         text-align: center;
-        margin: 3rem 1rem 1rem;
-        text-transform: uppercase;
+        margin: 3rem 1rem 2rem;
         font-weight: 700;
         font-size: 3rem;
     }
     
     .cards .container{
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
     }
 

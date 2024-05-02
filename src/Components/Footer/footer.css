@@ -6,7 +6,8 @@
 }
 
 .footer .logo{
-    width: 40vw;
+    width: 35vw;
+    max-width: 150px;
     display: flex;
     margin: 2rem auto 1.5rem;
 }
@@ -18,7 +19,7 @@
     border: 2px solid #004E6F;
     border-radius: 50px; /* Aumentamos el valor para hacer los bordes más redondeados */
     padding: 0.35rem 0;
-    margin: 0 20vw;
+    margin: 0 27vw;
     /* Ajustamos los valores de border-radius para cada esquina */
     border-top-left-radius: 50px 50px;
     border-top-right-radius: 50px 50px;

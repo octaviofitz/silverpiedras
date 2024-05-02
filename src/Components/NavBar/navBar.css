@@ -10,14 +10,16 @@
 #Navbar .links{
     font-weight: 600;
     color: black;
-    padding: 0 2rem;
+    padding: 0.35rem 2rem;
     font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 #Navbar .links:hover{
     color: #004E6F;
     text-decoration: underline;
     cursor: pointer;
+    font-weight: 900;
 }
 
 

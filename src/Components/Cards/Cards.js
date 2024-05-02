@@ -9,7 +9,7 @@ import './cards.css';
 function Cards() {
     return (
         <section className='cards'>
-            <h1 className='titulo'>Silver: Reluciente Diatomita</h1>   
+            <h1 className='titulo'>SILVER: Reluciente Diatomita</h1>   
             <div className='container'>
             <article className='tarjeta'>
                 <img src={Card1} className='img' alt='Silver' />
