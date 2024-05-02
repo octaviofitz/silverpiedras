@@ -43,6 +43,15 @@
     cursor: pointer;
 }
 
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards a:hover{
+    color: #004E6F;
+}
+
 .cards .container .tarjeta .textos .boton{
     font-weight: 700;
     font-size: 1.25rem;

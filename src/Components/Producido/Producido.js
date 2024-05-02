@@ -8,7 +8,9 @@ function Producido() {
     return (
         <section className='producido'>
             <h3 className='titulo'><strong>Producido por</strong></h3>
-            <img src={Rubicat} alt='Rubicat' className='img' />
+            <a href='https://www.rubicat.com.ar' target='_blank' rel="noreferrer noopener">
+                <img src={Rubicat} alt='Rubicat' className='img' />
+                </a>
         </section>
     );
 }

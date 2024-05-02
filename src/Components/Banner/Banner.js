@@ -9,10 +9,14 @@ function Banner() {
     return (
         <section>
         <div className='bannerMobile'>
-            <img src={BannerMobile} alt='Banner Silver Piedras' className='img' />
+        <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener">
+              <img src={BannerMobile} alt='Banner Silver Piedras' className='img' />
+              </a>
         </div>
         <div className='bannerDesktop'>
-            <img src={BannerDesktop} alt='Banner Silver Piedras' className='img' />
+           <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener">
+             <img src={BannerDesktop} alt='Banner Silver Piedras' className='img' />
+             </a>
         </div>
         </section>
     );

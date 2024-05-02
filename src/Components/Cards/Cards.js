@@ -5,6 +5,7 @@ import Card2 from '../IMG/BannerDesktop.png';
 import Flecha from '../IMG/flecha.png'
 
 import './cards.css';
+import { Link } from 'react-router-dom';
 
 function Cards() {
     return (
@@ -18,7 +19,7 @@ function Cards() {
                 <p>Debido a su estructura porosa y la alta pureza del mineral posee una gran calidad de absorsión</p>
                 <div className='containerBoton'>
                     <div>
-                    <p className='boton'>Ver más</p>
+                    <Link to='/producto'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
                     <img src={Flecha} className='flecha' />
@@ -34,7 +35,7 @@ function Cards() {
                 <p>Sus microporos internos favorecen la retención de olores e inhibición de bacterias</p>
                 <div className='containerBoton'>
                     <div>
-                    <p className='boton'>Ver más</p>
+                    <Link to='/producto'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
                     <img src={Flecha} className='flecha' />

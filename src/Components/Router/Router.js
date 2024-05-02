@@ -1,25 +1,28 @@
 import React from 'react';
+import {Routes, BrowserRouter, Route} from 'react-router-dom'
 
 /* Componentes */
 import Navbar from '../NavBar/NavBar';
-import Banner from '../Banner/Banner';
-import Cards from '../Cards/Cards';
 import Footer from '../Footer/Footer';
-import Producido from '../Producido/Producido';
+import Producto from '../Producto/Producto';
+import Index from '../../Pages/Index';
 
 import './router.css';
 
 function Router() {
     return (
-        <div>
+        <>
+            <BrowserRouter>
             <Navbar />
-            <main>
-            <Banner />
-            <Cards />
-            <Producido />
-            </main>
+            <Routes>
+        
+            <Route path='/' element={<Index />} />
+            <Route path='/producto' element={<Producto />} />
+        
+            </Routes>
             <Footer />
-        </div>
+            </BrowserRouter>
+        </>
     );
 }
 
