@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card1 from '../IMG/BannerDesktop.webp';
-import Flecha from '../IMG/flecha.png'
+import Flecha from '../IMG/Flecha.webp'
 
 import './cards.css';
 import { Link } from 'react-router-dom';
@@ -30,8 +30,8 @@ function Cards() {
             <article className='tarjeta'>
                 <img src={Card1} className='img' alt='Silver' />
                 <div className='textos'>
-                <h2>Retención de olores</h2>
-                <p>Sus microporos internos favorecen la retención de olores e inhibición de bacterias</p>
+                <h2>Recomendaciones de uso</h2>
+                <p>Es importante utilizar las piedras sanitarias de una forma adecuada para obtener su máximo rendimiento</p>
                 <div className='containerBoton'>
                     <div>
                     <Link to='/recomendaciones'><p className='boton'>Ver más</p></Link>

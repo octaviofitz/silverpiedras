@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ProductoFrontal from '../IMG/mockupFrontal.png';
-import ProductoDorso from '../IMG/MockupDorso.png';
+import ProductoFrontal from '../IMG/mockupFrontal.webp';
+import ProductoDorso from '../IMG/mockupDorso.webp';
 import BannerML from '../IMG/BannerDesktop.webp';
 
 import './producto.css';
@@ -31,7 +31,7 @@ function Producto() {
                         <p className='descripcion'>Silver posee una gran cualidad de absorción debido a su estructura porosa y a la alta pureza del mineral. Los microporos internos, favorecen la retención e inhibición de bacterias causantes del mal olor en la bandeja sanitaria.</p>
                             </div>
                             </div>
-        <img src={BannerML} className='banner'/>
+                            <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener"><img src={BannerML} className='banner'/></a>
         </section>
     );
 }
