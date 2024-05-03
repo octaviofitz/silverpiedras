@@ -1,15 +1,16 @@
 #Navbar .logo{
     width: 35vw;
+    max-width: 150px;
     padding: 1rem;
 }
 
 #Navbar{
-    background-color: #f8f8ff!important;
+    background-color: #fff!important;
 }
 
 #Navbar .links{
     font-weight: 600;
-    color: black;
+    color: #004E6F;
     padding: 0.35rem 2rem;
     font-size: 1.25rem;
     text-transform: uppercase;

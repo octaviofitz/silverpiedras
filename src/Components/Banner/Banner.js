@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BannerMobile from '../IMG/Bannercelu.png';
-import BannerDesktop from '../IMG/BannerDesktop.png';
+import BannerMobile from '../IMG/Bannercelu.webp';
+import BannerDesktop from '../IMG/BannerDesktop.webp';
 
 import './banner.css';
 

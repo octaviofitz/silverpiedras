@@ -5,6 +5,7 @@ import {Routes, BrowserRouter, Route} from 'react-router-dom'
 import Navbar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import Producto from '../Producto/Producto';
+import Recomendaciones from '../Recomendaciones/Recomendaciones';
 import Index from '../../Pages/Index';
 
 import './router.css';
@@ -18,7 +19,8 @@ function Router() {
         
             <Route path='/' element={<Index />} />
             <Route path='/producto' element={<Producto />} />
-        
+            <Route path='/recomendaciones' element={<Recomendaciones />} />
+                    
             </Routes>
             <Footer />
             </BrowserRouter>

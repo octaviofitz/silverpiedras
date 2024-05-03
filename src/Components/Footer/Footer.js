@@ -1,6 +1,7 @@
 import React from 'react';
 
-import logoFooter from '../IMG/Logo.png';
+import logoFooter from '../IMG/Logo.webp';
+import RubicatLogo from '../IMG/Rubicat.webp';
 
 import './footer.css';
 
@@ -10,8 +11,13 @@ function Footer() {
             <div>
                 <img src={logoFooter} alt='Logo Silver Piedras' className='logo' />
                 </div>
+                <div className='rubicat'>
+                    <div>
+                <p className='texto'>Producido por </p>
+                </div>
                 <div>
-                <p className='ubicacion'>Argentina 🏠</p>
+                <img src={RubicatLogo} alt='Rubicat' className='img' />
+                </div>
                 </div>
         </section>
     );

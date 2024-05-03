@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Card1 from '../IMG/BannerDesktop.png';
-import Card2 from '../IMG/BannerDesktop.png';
+import Card1 from '../IMG/BannerDesktop.webp';
 import Flecha from '../IMG/flecha.png'
 
 import './cards.css';
@@ -35,7 +34,7 @@ function Cards() {
                 <p>Sus microporos internos favorecen la retención de olores e inhibición de bacterias</p>
                 <div className='containerBoton'>
                     <div>
-                    <Link to='/producto'><p className='boton'>Ver más</p></Link>
+                    <Link to='/recomendaciones'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
                     <img src={Flecha} className='flecha' />

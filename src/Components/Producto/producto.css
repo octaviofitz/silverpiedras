@@ -1,0 +1,76 @@
+.producto{
+    background-color: #eeeeee;
+    padding: 2rem 0;
+}
+
+.producto .titulo{
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.producto .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.producto .container .img{
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 10%;
+    padding: 1.5rem;
+}
+
+.producto .container .textos .subtitulo{
+    color: #004E6F;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.producto .container .textos .descripcion{
+    margin: 1rem 1.75rem;
+    font-size: 1.3rem;
+}
+
+.producto .banner{
+    width: 90vw;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px){
+    .producto .banner{
+        width: 70vw;
+        margin: 2rem 0;
+    }
+
+    .producto .container .img{
+        width: 60vw;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .producto .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .producto .container .textos{
+        margin-top: -2vh;
+    }
+
+    .producto .container .textos .subtitulo{
+        font-weight: 900;
+        margin-left: 4rem;
+        font-size: 3rem;
+    }
+
+    .producto .container .textos .descripcion{
+        margin-left: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .producto .container .img{
+        width: 35vw;
+    }
+}

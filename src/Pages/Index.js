@@ -9,7 +9,7 @@ function Index() {
         <main>
             <Banner />
             <Cards />
-            <Producido />
+            {/* <Producido /> */}
         </main>
     );
 }
