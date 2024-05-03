@@ -14,6 +14,10 @@
     flex-direction: column;
 }
 
+.producto #Container{
+    padding: 2rem 0;
+}
+
 .producto .container .img{
     width: 80vw;
     background-color: #fff;
@@ -34,7 +38,8 @@
 
 .producto .banner{
     width: 90vw;
-    border-radius: 10px;
+    border-radius: 10px 10px;
+    padding-bottom: 3rem;
 }
 
 @media (min-width: 768px){
@@ -55,19 +60,33 @@
         justify-content: space-around;
     }
 
+    .producto #Container{
+        flex-direction: row-reverse;
+    }
+
+    .producto #Container .textos{
+        padding-top: 1rem;
+    }
+
+    .producto #Container .textos .subtitulo,
+    .producto #Container .textos .descripcion{
+        margin-right: 6rem;
+    }
+
     .producto .container .textos{
-        margin-top: -2vh;
+        margin-top: 4vh;
     }
 
     .producto .container .textos .subtitulo{
         font-weight: 900;
         margin-left: 4rem;
-        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.75rem;
     }
 
     .producto .container .textos .descripcion{
         margin-left: 5rem;
-        font-size: 1.5rem;
+        font-size: 1.75vw;
     }
 
     .producto .container .img{
