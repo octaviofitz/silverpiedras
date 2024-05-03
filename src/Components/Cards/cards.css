@@ -1,7 +1,29 @@
-.cards .titulo{
+.cards .titulo {
+    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
     text-align: center;
     margin: 0.75rem 1rem 1rem;
     font-weight: 700;
+    color: inherit; /* Asegura que el texto herede el color del elemento padre */
+    
+}
+
+.cards .titulo .subrayado{
+    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
+    color: inherit;
+}
+
+.cards .titulo .subrayado::after{
+        content: "";
+        position: absolute;
+        bottom: -5px; /* Ajusta esto para que coincida con la altura del subrayado */
+        left: 50%;
+        transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
+        width: 20vw; /* Asegura que el subrayado cubra todo el texto */
+        height: 7px; /* Ajusta esto para cambiar la espesor del subrayado */
+        background-color: rgba(0,78,111,1); /* Color del subrayado */
+        border: solid 1px rgba(0,78,111,1);
+        border-color: rgba(0,78,111,1) transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
 }
 
 .cards .container{
@@ -63,6 +85,14 @@
     margin-top: -0.25rem;
 }
 
+@media (min-width: 768px){
+    .cards .titulo .subrayado::after{
+        transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
+        width: 12vw; /* Asegura que el subrayado cubra todo el texto */
+        height: 7px; /* Ajusta esto para cambiar la espesor del subrayado */
+}
+}
+
 @media (min-width: 1024px){
     .cards .titulo{
         text-align: center;
@@ -70,6 +100,12 @@
         font-weight: 700;
         font-size: 2.5rem;
     }
+
+    .cards .titulo .subrayado::after{
+        transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
+        width: 9vw; /* Asegura que el subrayado cubra todo el texto */
+        height: 7px; /* Ajusta esto para cambiar la espesor del subrayado */
+}
     
     .cards .container{
         display: flex;
