@@ -6,6 +6,7 @@ import Navbar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import Producto from '../Producto/Producto';
 import Recomendaciones from '../Recomendaciones/Recomendaciones';
+import ScrollToTop from '../Utilidades/ScrollToTop';
 import Index from '../../Pages/Index';
 
 import './router.css';
@@ -14,6 +15,7 @@ function Router() {
     return (
         <>
             <BrowserRouter>
+            <ScrollToTop />
             <Navbar />
             <Routes>
         
