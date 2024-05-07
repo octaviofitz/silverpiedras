@@ -28,7 +28,7 @@ function Producto() {
 
                             <div className='textos'>
                             <h5 className='subtitulo'>Diatomita</h5>
-                        <p className='descripcion'>Silver posee una gran cualidad de absorción debido a su estructura porosa y a la alta pureza del mineral. Los microporos internos, favorecen la retención e inhibición de bacterias causantes del mal olor en la bandeja sanitaria.</p>
+                        <p className='descripcion'>La diatomita es una roca silícea, sedimentaria de origen biogénico. Este mineral se forma por la acumulación de los esqueletos microscópicos de algas unicelulares.</p>
                             </div>
                             </div>
                             <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener"><img src={BannerML} className='banner'/></a>
