@@ -23,22 +23,35 @@
     background-color: #fff;
     border-radius: 10%;
     padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
 }
 
 .producto .container .textos .subtitulo{
     color: #004E6F;
     padding-top: 2rem;
     font-size: 2.5rem;
+    
 }
+
 
 .producto .container .textos .descripcion{
     margin: 1rem 1.75rem;
     font-size: 1.3rem;
 }
 
+.producto .container .textos .lista{
+    text-align: left;
+    margin: 1rem;
+}
+
+.producto .container .textos .lista .items{
+    font-size: 1.3rem;
+}
+
 .producto .banner{
     width: 90vw;
-    border-radius: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     padding-bottom: 3rem;
 }
 
@@ -74,7 +87,7 @@
     }
 
     .producto .container .textos{
-        margin-top: 4vh;
+        margin-top: 1vh;
     }
 
     .producto .container .textos .subtitulo{
@@ -84,12 +97,22 @@
         font-size: 2.75rem;
     }
 
+    .producto .container .textos .lista .items{
+        font-size: 1.3vw;
+    }
+
     .producto .container .textos .descripcion{
         margin-left: 5rem;
-        font-size: 1.75vw;
+        font-size: 1.5vw;
     }
 
     .producto .container .img{
         width: 35vw;
+    }
+}
+
+@media (min-width: 1440px){
+    .producto .container .textos{
+        margin-top: 2.5vh;
     }
 }

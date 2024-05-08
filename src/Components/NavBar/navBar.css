@@ -32,7 +32,7 @@
 
 #Navbar .links:hover{
     font-weight: 900;
-    color: #1CA4CB;
+    color: #1CA4CB!important;
 }
 
 

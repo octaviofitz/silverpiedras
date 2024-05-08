@@ -24,7 +24,8 @@ function Footer() {
                 </div>
                 </div>
                 <div className='contacto'>
-                  <p className='texto'>Contacto: <a href='mailto:info@rubicat.com.ar' className='link'>info@rubicat.com.ar</a></p>
+                <img src="https://www.clipartmax.com/png/small/222-2228214_cartoon-e-mail-envelope-icon-mail-envelope-png.png" alt="Cartoon, E-mail, Envelope, Icon, Mail - Envelope .png @clipartmax.com" className='mail' />
+                 <a href='mailto:info@rubicat.com.ar' className='link'>info@silverpiedras.com.ar</a>
                 </div>
         </section>
     );

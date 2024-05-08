@@ -13,7 +13,7 @@ function Cards() {
             <h1 className='titulo'><span className='subrayado'>SILVER:</span> Reluciente Diatomita</h1>   
             <div className='container'>
             <article className='tarjeta'>
-                <img src={Card1} className='img' alt='Silver' />
+                <img src={Card1} className='img' alt='Silver Piedras sanitarias' />
                 <div className='textos'>
                 <h2>Absorbente sanitario</h2>
                 <p>Debido a su estructura porosa y la alta pureza del mineral posee una gran calidad de absorsión</p>
@@ -29,9 +29,9 @@ function Cards() {
             </article>
 
             <article className='tarjeta'>
-                <img src={Card2} className='img' alt='Silver' />
+                <img src={Card2} className='img' alt='Piedras sanitarias'/>
                 <div className='textos'>
-                <h2>Recomendaciones de uso</h2>
+                <h2>Tips y consejos de uso</h2>
                 <p>Es importante utilizar las piedras sanitarias de una forma adecuada para obtener su máximo rendimiento</p>
                 <div className='containerBoton'>
                     <div>
