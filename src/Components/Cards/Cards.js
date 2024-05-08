@@ -22,7 +22,7 @@ function Cards() {
                     <Link to='/producto'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
-                    <img src={Flecha} className='flecha' />
+                    <img src={Flecha} className='flecha' alt='' />
                     </div>
                 </div>
                 </div>
@@ -38,7 +38,7 @@ function Cards() {
                     <Link to='/recomendaciones'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
-                    <img src={Flecha} className='flecha' />
+                    <img src={Flecha} className='flecha' alt='' />
                     </div>
                 </div>
                 </div>

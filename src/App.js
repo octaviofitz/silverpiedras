@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* Componentes */
-import NavBar from '../src/Components/NavBar/NavBar';
 import Router from './Components/Router/Router';
 
 function App() {
