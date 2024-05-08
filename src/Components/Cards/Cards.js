@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Card1 from '../IMG/BannerDesktop.webp';
+import Card1 from '../../IMG/Cards/Card1.webp';
+import Card2 from '../../IMG/Cards/Card2.webp';
 import Flecha from '../IMG/Flecha.webp'
 
 import './cards.css';
@@ -28,7 +29,7 @@ function Cards() {
             </article>
 
             <article className='tarjeta'>
-                <img src={Card1} className='img' alt='Silver' />
+                <img src={Card2} className='img' alt='Silver' />
                 <div className='textos'>
                 <h2>Recomendaciones de uso</h2>
                 <p>Es importante utilizar las piedras sanitarias de una forma adecuada para obtener su máximo rendimiento</p>

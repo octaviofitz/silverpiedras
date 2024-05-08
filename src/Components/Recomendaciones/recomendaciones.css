@@ -81,3 +81,129 @@
     font-weight: 900;
     font-size: 4.5vw;
 }
+
+@media (min-width: 768px){
+    .recYConsejos .titulo,
+.recYConsejos .tituloConsejos{
+    font-size: 3.5vw;
+    margin-bottom: 1.2rem;
+}
+
+.recYConsejos .titulo::after{
+    content: "";
+        width: 20vw; /* Asegura que el subrayado cubra todo el texto */
+}
+
+.recYConsejos .tituloConsejos::after{
+        width: 10vw; /* Asegura que el subrayado cubra todo el texto */
+}
+
+
+.recYConsejos .recomendaciones .card,
+.recYConsejos .consejos .card{
+    display: flex;
+    width: 45vw;
+    border-radius: 13px 13px 13px 13px;
+    margin: 1rem auto;
+}
+
+.recYConsejos .recomendaciones,
+.recYConsejos .consejos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.recYConsejos .recomendaciones .card .img,
+.recYConsejos .consejos .card .img{
+    width: 25vw;
+    display: flex;
+    margin: 0.5rem auto;
+}
+
+.recYConsejos .recomendaciones .card .texto,
+.recYConsejos .consejos .card .texto{
+    font-size: 3vw;
+    margin-bottom: 0rem;
+    padding: 0 0.9rem;
+}
+
+.recYConsejos .recomendaciones .card .subtexto,
+.recYConsejos .consejos .card .subtexto{
+    font-size: 3vw;
+}
+}
+
+@media (min-width: 1024px){
+.recYConsejos{
+    padding: 3rem 0;
+}
+
+    .recYConsejos .titulo,
+.recYConsejos .tituloConsejos{
+    font-size: 3vw;
+    margin-bottom: 2.5rem;
+}
+
+.recYConsejos .titulo::after{
+    content: "";
+        width: 16vw; /* Asegura que el subrayado cubra todo el texto */
+}
+
+.recYConsejos .tituloConsejos::after{
+        width: 7vw; /* Asegura que el subrayado cubra todo el texto */
+}
+
+
+.recYConsejos .recomendaciones .card,
+.recYConsejos .consejos .card{
+    display: flex;
+    width: 34vw;
+    border-radius: 13px 13px 13px 13px;
+    margin: 1rem auto 2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;}
+
+.recYConsejos .recomendaciones .card .img,
+.recYConsejos .consejos .card .img{
+    width: 15vw;
+    display: flex;
+    margin: 0.5rem auto;
+}
+
+.recYConsejos .recomendaciones .card .texto,
+.recYConsejos .consejos .card .texto{
+    font-size: 1.8vw;
+    margin-bottom: 0rem;
+    padding: 0 0.9rem;
+}
+
+.recYConsejos .recomendaciones .card .subtexto,
+.recYConsejos .consejos .card .subtexto{
+    font-size: 2vw;
+}
+
+.recYConsejos .recomendaciones #tarjeta1R{
+    width: 50vw;
+}
+
+.recYConsejos .recomendaciones #tarjeta3R{
+    width: 35vw;
+}
+
+.recYConsejos .recomendaciones #tarjeta4R{
+    width: 50vw;
+}
+
+.recYConsejos .consejos #tarjeta1C{
+    width: 35vw;
+}
+
+.recYConsejos .consejos #tarjeta2C{
+    width: 50vw;
+}
+
+.recYConsejos .consejos .card{
+    width: 27vw;
+}
+}

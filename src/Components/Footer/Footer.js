@@ -16,7 +16,9 @@ function Footer() {
                 <p className='texto'>Producido por </p>
                 </div>
                 <div>
-                <img src={RubicatLogo} alt='Rubicat' className='img' />
+                <a href='https://www.rubicat.com.ar' target='_blank' rel="noreferrer noopener">
+                <img src={RubicatLogo} alt='Rubicat' className='img' /> 
+                </a>
                 </div>
                 </div>
         </section>

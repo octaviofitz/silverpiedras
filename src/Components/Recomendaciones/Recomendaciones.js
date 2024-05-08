@@ -10,8 +10,6 @@ import Consejo3 from '../../IMG/Consejos/Consejos3.webp';
 import Consejo4 from '../../IMG/Consejos/Consejos4.webp';
 import Consejo5 from '../../IMG/Consejos/Consejos5.webp';
 
-
-
 import './recomendaciones.css';
 
 function Recomendaciones() {
@@ -22,7 +20,7 @@ function Recomendaciones() {
 
             <article className='recomendaciones'>
                 
-                <div className='card'>
+                <div className='card' id='tarjeta1R'>
                     <img src={Recomendacion1} alt='' className='img' />
                     <p className='texto'>Retirar los desechos</p>
                     <p className='subtexto'>mínimo una vez al día</p>
@@ -34,13 +32,13 @@ function Recomendaciones() {
                     <p className='subtexto'>luego de cada retiro de residuos</p>
                   </div>
 
-                  <div className='card'>
+                  <div className='card' id='tarjeta3R'>
                     <img src={Recomendacion3} alt='' className='img' />
                     <p className='texto'>La litera debe ser colocada en un lugar</p>
                     <p className='subtexto'>seco y libre de humedad</p>
                   </div>
 
-                  <div className='card'>
+                  <div className='card' id='tarjeta4R'>
                     <img src={Recomendacion4} alt='' className='img' />
                     <p className='texto'>Higienizar la bandeja por completo</p>
                     <p className='subtexto'>mínimo cada 15 días</p>
@@ -52,13 +50,13 @@ function Recomendaciones() {
 
                   <article className='consejos'>
 
-                  <div className='card'>
+                  <div className='card' id='tarjeta1C'>
                     <img src={Consejo1} alt='' className='img' />
                     <p className='texto'>Retirar los desechos</p>
                     <p className='subtexto'>mínimo una vez al día</p>
                   </div>
 
-                  <div className='card'>
+                  <div className='card' id='tarjeta2C'>
                     <img src={Consejo2} alt='' className='img' />
                     <p className='texto'> Lavarse las manos</p>
                     <p className='subtexto'>luego de cada retiro de residuos</p>
