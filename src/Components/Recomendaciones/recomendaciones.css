@@ -132,6 +132,7 @@
 .recYConsejos .recomendaciones .card .subtexto,
 .recYConsejos .consejos .card .subtexto{
     font-size: 3vw;
+    padding: 0 1rem;
 }
 }
 
@@ -196,14 +197,18 @@
 }
 
 .recYConsejos .consejos #tarjeta1C{
-    width: 35vw;
+    width: 45vw;
 }
 
 .recYConsejos .consejos #tarjeta2C{
-    width: 50vw;
+    width: 35vw;
+}
+
+.recYConsejos .consejos #tarjeta5C{
+    width: 60VW;
 }
 
 .recYConsejos .consejos .card{
-    width: 27vw;
+    width: 40vw;
 }
 }

@@ -52,32 +52,32 @@ function Recomendaciones() {
 
                   <div className='card' id='tarjeta1C'>
                     <img src={Consejo1} alt='' className='img' />
-                    <p className='texto'>Retirar los desechos</p>
-                    <p className='subtexto'>mínimo una vez al día</p>
+                    <p className='texto'>Duplicar recursos (Una bandeja por gato + una extra)</p>
+                    <p className='subtexto'>para darles mayor superficie limpia</p>
                   </div>
 
                   <div className='card' id='tarjeta2C'>
                     <img src={Consejo2} alt='' className='img' />
-                    <p className='texto'> Lavarse las manos</p>
-                    <p className='subtexto'>luego de cada retiro de residuos</p>
+                    <p className='texto'>El tamaño ideal de la litera</p>
+                    <p className='subtexto'>es una vez y media la medida del gato</p>
                   </div>
 
                   <div className='card'>
                     <img src={Consejo3} alt='' className='img' />
-                    <p className='texto'>La litera debe ser colocada en un lugar</p>
-                    <p className='subtexto'>seco y libre de humedad</p>
+                    <p className='texto'>Arenero ubicado</p>
+                    <p className='subtexto'>en espacios tranquilos</p>
                   </div>
 
                   <div className='card'>
                     <img src={Consejo4} alt='' className='img' />
-                    <p className='texto'>Higienizar la bandeja por completo</p>
-                    <p className='subtexto'>mínimo cada 15 días</p>
+                    <p className='texto'>Separar la bandeja </p>
+                    <p className='subtexto'>del espacio de comida/bebedero de agua.</p>
                   </div>
 
-                  <div className='card'>
+                  <div className='card' id='tarjeta5C'>
                     <img src={Consejo5} alt='' className='img' />
-                    <p className='texto'>Higienizar la bandeja por completo</p>
-                    <p className='subtexto'>mínimo cada 15 días</p>
+                    <p className='texto'>Para los gatos que escarban o tiran arena fuera de la bandeja</p>
+                    <p className='subtexto'>se recomienda utilizar bandeja con bordes altos o con terminación.</p>
                   </div>
 
                   </article>

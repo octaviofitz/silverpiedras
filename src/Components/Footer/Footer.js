@@ -9,7 +9,9 @@ function Footer() {
     return (
         <section className='footer'>
             <div>
+            <a href='#logo' rel="noreferrer noopener">
                 <img src={logoFooter} alt='Logo Silver Piedras' className='logo' />
+                </a>
                 </div>
                 <div className='rubicat'>
                     <div>
@@ -20,6 +22,9 @@ function Footer() {
                 <img src={RubicatLogo} alt='Rubicat' className='img' /> 
                 </a>
                 </div>
+                </div>
+                <div className='contacto'>
+                  <p className='texto'>Contacto: <a href='mailto:info@rubicat.com.ar' className='link'>info@rubicat.com.ar</a></p>
                 </div>
         </section>
     );

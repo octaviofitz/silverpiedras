@@ -22,7 +22,7 @@ function BasicExample() {
     <Navbar expand="lg" className="bg-body-tertiary" id='Navbar' expanded={isOpen}>
       <Container>
         <Nav.Link as={Link} to='/' onClick={toggleNavbar}>
-          <img src={logo} alt='Logo Silver Piedras' className='logo' />
+          <img src={logo} alt='Logo Silver Piedras' className='logo' id='logo' />
         </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
         <Navbar.Collapse id="basic-navbar-nav">
