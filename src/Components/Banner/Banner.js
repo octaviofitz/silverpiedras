@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BannerMobile from '../IMG/Bannercelu.webp';
-import BannerDesktop from '../IMG/BannerDesktop.webp';
+import BannerMobile from '../../IMG/Banner/Bannercelu.webp';
+import BannerDesktop from '../../IMG/Banner/BannerDesktop.webp';
 
 import './banner.css';
 
@@ -9,14 +9,10 @@ function Banner() {
     return (
         <section>
         <div className='bannerMobile'>
-        <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener">
-              <img src={BannerMobile} alt='Banner Silver Piedras' className='img' />
-              </a>
+              <img src={BannerMobile} alt='Banner Silver Piedras' className='img' />             
         </div>
         <div className='bannerDesktop'>
-           <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener">
              <img src={BannerDesktop} alt='Banner Silver Piedras' className='img' />
-             </a>
         </div>
         </section>
     );

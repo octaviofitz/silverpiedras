@@ -18,7 +18,7 @@ function Router() {
             <ScrollToTop />
             <Navbar />
             <Routes>
-        
+            
             <Route path='/' element={<Index />} />
             <Route path='/producto' element={<Producto />} />
             <Route path='/recomendaciones' element={<Recomendaciones />} />

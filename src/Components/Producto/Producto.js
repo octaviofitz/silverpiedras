@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ProductoFrontal from '../IMG/mockupFrontal.webp';
-import ProductoDorso from '../IMG/mockupDorso.webp';
-import BannerML from '../IMG/BannerDesktop.webp';
+import ProductoFrontal from '../../IMG/Productos/mockupFrontal.webp';
+import ProductoDorso from '../../IMG/Productos/mockupDorso.webp';
+import BannerML from '../../IMG/Banner/BannerDesktop.webp';
 
 import './producto.css';
 
@@ -10,7 +10,7 @@ function Producto() {
     return (
         <section className='producto'>
             <h4 className='titulo'>Producto</h4>
-        <div className='container'>
+        <div className='container' id='Container2'>
             <div>
                 <img src={ProductoFrontal} alt='Silver Piedras para gatos' className='img' />
                 </div>
@@ -33,14 +33,14 @@ function Producto() {
                         <ul className='lista'>
                             <li className='items'>Alta porosidad</li>
                             <li className='items'>Volumen de muy baja densidad</li>
-                            <li className='items'>Muy alta capacidad para absorber líquidos (absorbe hasta 150% de su peso en agua)</li>
+                            <li className='items'>Alta capacidad para absorber líquidos</li>
                             <li className='items'>Alta resistencia a la temperatura</li>
                             <li className='items'>Químicamente inerte</li>
                         </ul>
                             </div>
 
                             </div>
-                            <a href='https://listado.mercadolibre.com.ar/silver-piedras-sanitarias#D[A:silver%20piedras%20sanitarias]' target='_blank' rel="noreferrer noopener"><img src={BannerML} className='banner' alt='Silver Piedras para gatos' /></a>
+                           <img src={BannerML} className='banner' alt='Silver Piedras para gatos' />
         </section>
     );
 }

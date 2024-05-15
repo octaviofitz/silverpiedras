@@ -1,7 +1,7 @@
 import React from 'react';
 
-import logoFooter from '../IMG/Logo.webp';
-import RubicatLogo from '../IMG/Rubicat.webp';
+import logoFooter from '../../IMG/Varios/Logo.webp';
+import RubicatLogo from '../../IMG/Varios/Rubicat.webp';
 
 import './footer.css';
 
