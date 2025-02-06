@@ -30,7 +30,6 @@ function BasicExample() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/producto" className='links' onClick={toggleNavbar}>Producto</Nav.Link>
             <Nav.Link as={Link} to="/recomendaciones" className='links' onClick={toggleNavbar}>Recomendaciones</Nav.Link>
-            <Nav.Link as={Link} to="https://www.rubicat.com.ar" target='_blank' className='links' onClick={toggleNavbar}>Rubicat</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
