@@ -10,7 +10,7 @@
 }
 
 #Navbar .links{
-    font-weight: 600;
+    font-weight: 400;
     color: #004E6F!important;
     padding: 0.35rem 2rem;
     font-size: 1.25rem;
@@ -31,7 +31,7 @@
 }
 
 #Navbar .links:hover{
-    font-weight: 900;
+    font-weight: 6s00;
     color: #1CA4CB!important;
 }
 

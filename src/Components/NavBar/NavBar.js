@@ -28,7 +28,8 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/producto" className='links' onClick={toggleNavbar}>Producto</Nav.Link>
+          <Nav.Link as={Link} to="/bentonita" className='links' onClick={toggleNavbar}>Bentonita</Nav.Link>
+            <Nav.Link as={Link} to="/diatomita" className='links' onClick={toggleNavbar}>Diatomita</Nav.Link>
             <Nav.Link as={Link} to="/recomendaciones" className='links' onClick={toggleNavbar}>Recomendaciones</Nav.Link>
           </Nav>
         </Navbar.Collapse>

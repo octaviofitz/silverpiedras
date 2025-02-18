@@ -4,7 +4,8 @@ import {Routes, BrowserRouter, Route} from 'react-router-dom'
 /* Componentes */
 import Navbar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-import Producto from '../Producto/Producto';
+import Bentonita from '../Productos/Bentonita/Bentonita';
+import Diatomita from '../Productos/Diatomita/Diatomita';
 import Recomendaciones from '../Recomendaciones/Recomendaciones';
 import ScrollToTop from '../Utilidades/ScrollToTop';
 import Index from '../../Pages/Index';
@@ -20,8 +21,10 @@ function Router() {
             <Routes>
             
             <Route path='/' element={<Index />} />
-            <Route path='/producto' element={<Producto />} />
+            <Route path='/bentonita' element={<Bentonita />} />
+            <Route path='/diatomita' element={<Diatomita />} />
             <Route path='/recomendaciones' element={<Recomendaciones />} />
+
                     
             </Routes>
             <Footer />

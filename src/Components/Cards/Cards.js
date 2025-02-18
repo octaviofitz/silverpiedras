@@ -15,11 +15,11 @@ function Cards() {
             <article className='tarjeta'>
                 <img src={Card1} className='img' alt='Silver Piedras sanitarias' />
                 <div className='textos'>
-                <h2>Absorbente sanitario</h2>
-                <p>Debido a su estructura porosa y la alta pureza del mineral posee una gran calidad de absorsión</p>
+                <h2>Bentonita</h2>
+                <p>La arena de bentonita Silver para gatos ofrece una excelente absorción de desechos, manteniendo la caja limpia y sin malos olores. Su fórmula de alta calidad garantiza máxima efectividad y comodidad para tu gato.</p>
                 <div className='containerBoton'>
                     <div>
-                    <Link to='/producto'><p className='boton'>Ver más</p></Link>
+                    <Link to='/bentonita'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
                     <img src={Flecha} className='flecha' alt='' />
@@ -31,11 +31,11 @@ function Cards() {
             <article className='tarjeta'>
                 <img src={Card2} className='img' alt='Piedras sanitarias'/>
                 <div className='textos'>
-                <h2>Tips y consejos de uso</h2>
-                <p>Es importante utilizar las piedras sanitarias de una forma adecuada para obtener su máximo rendimiento</p>
+                <h2>Diatomita</h2>
+                <p>La arena de diatomita Silver para gatos absorbe rápidamente los desechos, manteniendo la caja limpia y libre de malos olores. Su fórmula natural y eficaz garantiza una higiene superior para tu gato.</p>
                 <div className='containerBoton'>
                     <div>
-                    <Link to='/recomendaciones'><p className='boton'>Ver más</p></Link>
+                    <Link to='/diatomita'><p className='boton'>Ver más</p></Link>
                     </div>
                     <div>
                     <img src={Flecha} className='flecha' alt='' />

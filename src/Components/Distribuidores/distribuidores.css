@@ -1,0 +1,89 @@
+.distribuidor{
+    background-color: white;
+    margin: 0 10vw;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.distribuidor .titulo{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
+    text-align: center;
+}
+
+.distribuidor .titulo::after{
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Ajusta esto para que coincida con la altura del subrayado */
+    left: 50%;
+    transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
+    width: 32vw; /* Asegura que el subrayado cubra todo el texto */
+    height: 6px; /* Ajusta esto para cambiar la espesor del subrayado */
+    background-color: rgba(0,78,111,1); /* Color del subrayado */
+    border: solid 1px rgba(0,78,111,1);
+    border-color: rgba(0,78,111,1) transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+}
+
+.distribuidor .texto{
+    font-size: 1.1rem;
+}
+
+.distribuidor .boton{
+    background-color: #004E6F;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.35rem;
+    padding: 0.35rem 1rem;
+    margin-bottom: 0.75rem;
+    border: none;
+}
+
+.distribuidor .boton:hover{
+    background-color: #1CA4CB;
+}
+
+@media (min-width: 768px){
+
+    .distribuidor .titulo::after{
+        width: 14vw; /* Asegura que el subrayado cubra todo el texto */
+    }
+
+    .distribuidor .texto{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .distribuidor{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -8rem;
+    }
+
+    .distribuidor .titulo{
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    .distribuidor .titulo::after{
+        content: "";
+        position: absolute;
+        bottom: -10px; /* Ajusta esto para que coincida con la altura del subrayado */
+        left: 50%;
+        transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
+        width: 8vw; /* Asegura que el subrayado cubra todo el texto */
+        height: 6px; /* Ajusta esto para cambiar la espesor del subrayado */
+        background-color: rgba(0,78,111,1); /* Color del subrayado */
+        border: solid 1px rgba(0,78,111,1);
+        border-color: rgba(0,78,111,1) transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+        text-align: left;
+    }
+    
+}
