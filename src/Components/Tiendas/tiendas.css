@@ -1,19 +1,19 @@
-.tiendas{
+.tiendas {
     margin: 8vw;
     padding: 5vw;
     border: none;
 }
 
-.tiendas .titulo{
+.tiendas .titulo {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
     position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
     text-align: center;
 }
 
-.tiendas .titulo::after{
+.tiendas .titulo::after {
     content: "";
     position: absolute;
     bottom: -10px; /* Ajusta esto para que coincida con la altura del subrayado */
@@ -27,80 +27,140 @@
     border-radius: 50%/100px 100px 0 0;
 }
 
-.tiendas .card .datos{
+.tiendas .search-bar {
+    margin-bottom: 2rem;
+}
+
+.tiendas .view-toggle {
     display: flex;
+    justify-content: space-around;
+    margin-top: 2rem; /* Espacio entre la barra de búsqueda y las opciones */
+}
+
+.tiendas .view-option {
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #004E6F;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    font-weight: normal;
     border-bottom: 1px solid #004E6F;
-    text-align: left;
-    padding: 1vh;
-    margin-top: 1vh;
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
 }
 
-.tiendas .card .datos:last-child{
-    border-bottom: none;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+.tiendas .view-option.active {
+    color: white;
+    background-color: #004E6F;
+    border-radius: 10px;
 }
 
-.tiendas .card .datos .informacion{
-    margin-left: 5vw;
-    padding: 0;
+.tiendas .map-container,
+.tiendas .tienda-list {
+    margin-top: 2rem;
 }
 
-.tiendas .card .img{
-    width: 10vw;
-    padding-left: 3vw;
-    padding-top: 1vh;
+/* Estilos para el listado de tiendas */
+.tienda-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-.tiendas .card .informacion .nombre{
+.tienda-card {
+    border: 1px solid #004E6F;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tienda-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tienda-info {
+    margin-top: 10px;
+}
+
+.tienda-nombre {
     color: #004E6F;
     font-size: 1.25rem;
     margin: 0;
     text-transform: uppercase;
 }
 
-.tiendas .card .informacion .direccion,
-.tiendas .card .informacion .direccion{
+.tienda-direccion,
+.tienda-contacto {
     font-size: 0.9rem;
-    padding: 0;
+    color: #555;
     margin: 0.15rem;
 }
 
-@media (min-width: 768px){
-    
-    .tiendas{
+/* Estilos para el mapa */
+.tienda-map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px;
+}
+
+@media (min-width: 768px) {
+
+    .tiendas {
         margin-top: -1.5rem;
     }
-    
-    .tiendas .card{
+
+    .tiendas .card {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 2rem;
         justify-content: space-around;
     }
 
-    .tiendas .titulo{
+    .tiendas .titulo {
         font-size: 2.25rem;
     }
 
-    .tiendas .card .datos:last-child{
+    .tiendas .card .datos:last-child {
         border-bottom: none;
         box-shadow: none;
         border-bottom: 1px solid #004E6F;
     }
+
+    .tiendas .view-option {
+        font-size: 1.3rem; /* Tamaño de fuente más grande en pantallas medianas */
+    }
+
+    .tienda-list {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes */
+    }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
-    .tiendas .card{
+    .tiendas .card {
         border-bottom: 0;
     }
 
-    .tiendas .card .img{
+    .tiendas .card .img {
         width: 7vw;
     }
 
-    .tiendas .titulo::after{
+    .tiendas .titulo::after {
         width: 15vw;
     }
 
+    .tiendas .view-toggle{
+        justify-content: space-evenly;
+    }
+
+    .tiendas .view-option {
+        font-size: 1.15rem; /* Aumentamos el tamaño del texto para pantallas más grandes */
+        margin-bottom: 2rem;
+        display: flex;
+    }
 }

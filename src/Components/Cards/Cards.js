@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 function Cards() {
     return (
         <section className='cards'>
-            <h1 className='titulo'><span className='subrayado'>SILVER:</span> Reluciente Diatomita</h1>   
+            <h1 className='titulo'><span className='subrayado'>SILVER:</span> PIEDRAS RELUCIENTES</h1>   
             <div className='container'>
             <article className='tarjeta'>
                 <img src={Card1} className='img' alt='Silver Piedras sanitarias' />

@@ -1,0 +1,134 @@
+/* Contenedor del buscador */
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Barra de búsqueda */
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/* Botón */
+.search-button {
+  padding: 8px 12px;
+  background-color: #004E6F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #1CA4CB;
+}
+
+/* Contenedor del mapa */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+/* Estilo del mapa */
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Botón de localizarme */
+.locate-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1CA4CB;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que quede sobre el mapa */
+}
+
+.locate-button:hover {
+  background-color: #004E6F;
+}
+
+/* Media Queries */
+
+/* Hasta 768px - dispositivos móviles */
+@media (max-width: 768px) {
+  .search-container {
+      flex-direction: column; /* El buscador se apila verticalmente */
+      align-items: stretch; /* Que ocupe todo el ancho */
+      margin-bottom: 15px;
+  }
+
+  .search-input {
+      margin-bottom: 10px; /* Un pequeño margen entre el input y el botón */
+      padding: 10px;
+  }
+
+  .search-button {
+      padding: 12px 16px;
+  }
+
+  .map-container {
+      height: 300px; /* Mapa más pequeño en dispositivos móviles */
+  }
+
+  .locate-button {
+      top: 20px; /* Botón más abajo para evitar que se solape con el mapa */
+      right: 20px;
+  }
+}
+
+/* Entre 768px y 1024px - tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .search-container {
+      gap: 20px;
+      margin-bottom: 20px;
+      justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+  }
+
+  .search-input {
+      width: 50vw; /* La barra de búsqueda ocupa el 50% del ancho de la pantalla */
+  }
+
+  .search-button {
+      width: 25vw; /* El botón ocupa el 25% del ancho de la pantalla */
+  }
+
+  .map-container {
+      height: 500px; /* Tamaño original del mapa */
+  }
+
+  .locate-button {
+      top: 10px; /* Ajuste en pantallas grandes */
+      right: 10px;
+  }
+}
+
+/* A partir de 1024px - pantallas grandes */
+@media (min-width: 1024px) {
+  .search-container {
+      gap: 20px;
+      margin-bottom: 20px;
+      justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+  }
+
+  .search-input {
+      width: 50vw; /* La barra de búsqueda ocupa el 50% del ancho de la pantalla */
+  }
+
+  .search-button {
+      width: 15vw; /* El botón ocupa el 25% del ancho de la pantalla */
+  }
+}

@@ -1,4 +1,5 @@
 import './App.css';
+import "leaflet/dist/leaflet.css"; // Importa el CSS de Leaflet
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* Componentes */
