@@ -2,36 +2,37 @@ import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import axios from "axios";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet"; // Asegúrate de importar Leaflet
-import SilverImg from '../../../IMG/Varios/Logo.webp'; // Ícono de tienda
-import FlagImg from '../../../IMG/Varios/flag.png'; // Ícono de la banderita celeste
-import DataTiendas from '../../../Data/DataTiendas'; // Importa los datos de las tiendas
+import L from "leaflet";
+import FlagImg from "../../../IMG/Varios/flag.png";
+import DataTiendas from "../../../Data/DataTiendas";
 import "./mapView.css";
 
-// Modifica el componente MapUpdater
+// Componente para actualizar la vista del mapa cuando cambia la ubicación
 const MapUpdater = ({ position }) => {
   const map = useMap();
-  if (position) {
-    map.setView(position, 14);
-  }
+  useEffect(() => {
+    if (position) {
+      map.setView(position, 14);
+    }
+  }, [position, map]);
   return null;
 };
 
-const MapView = () => {
+const MapView = ({ selectedStore }) => {
   const [search, setSearch] = useState("");
-  const [position, setPosition] = useState(null); // Cambiado a null
-  const [userLocation, setUserLocation] = useState(null); // Estado para controlar la localización
+  const [position, setPosition] = useState(null);
+  const [userLocation, setUserLocation] = useState(null);
 
   // Íconos personalizados
   const tiendaIcon = new L.Icon({
-    iconUrl: SilverImg,
+    iconUrl: FlagImg,
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32],
   });
 
   const userIcon = new L.Icon({
-    iconUrl: FlagImg, // Ícono de banderita celeste
+    iconUrl: FlagImg,
     iconSize: [32, 32],
     iconAnchor: [16, 32],
     popupAnchor: [0, -32],
@@ -63,7 +64,7 @@ const MapView = () => {
         (position) => {
           const { latitude, longitude } = position.coords;
           setPosition([latitude, longitude]);
-          setUserLocation([latitude, longitude]); // Cambiar ícono a banderita celeste
+          setUserLocation([latitude, longitude]);
         },
         (error) => {
           console.error("Error obteniendo la ubicación:", error);
@@ -75,13 +76,14 @@ const MapView = () => {
     }
   };
 
-  // Establecer posición inicial si no se ha hecho búsqueda ni localizado
+  // Establecer la posición inicial o la de la tienda seleccionada
   useEffect(() => {
-    if (position === null) {
-      setPosition([-34.6037, -58.3816]); // Establece una posición inicial por defecto (Buenos Aires)
+    if (selectedStore) {
+      setPosition([selectedStore.lat, selectedStore.lng]);
+    } else if (position === null) {
+      setPosition([-34.6037, -58.3816]); // Posición por defecto (Buenos Aires)
     }
-  }, [position]);
-  
+  }, [selectedStore]);
 
   return (
     <div>

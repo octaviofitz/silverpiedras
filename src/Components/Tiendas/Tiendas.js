@@ -5,34 +5,33 @@ import MapView from '../Utilidades/Map/Map';
 import DataTiendas from '../../Data/DataTiendas';
 
 function Tiendas() {
-  // Estado para controlar la vista activa
   const [view, setView] = useState('map'); // 'map' o 'list'
+  const [selectedStore, setSelectedStore] = useState(null);
 
-  // Cambiar la vista entre mapa y listado
-  const handleToggleView = (viewType) => {
-    setView(viewType);
+  // Función para cambiar la vista y centrar el mapa en la tienda seleccionada
+  const handleSelectStore = (tienda) => {
+    setSelectedStore(tienda);
+    setView('map'); // Cambia la vista a mapa
   };
 
   return (
     <section className="tiendas">
       <h3 className="titulo">¿Dónde comprar SILVER?</h3>
 
-      {/* Botón de búsqueda (supongo que ya lo tienes) */}
       <div className="search-bar">
         {/* Aquí va tu componente de búsqueda */}
       </div>
 
-      {/* Opciones de Mapa y Listado debajo del botón de búsqueda */}
       <div className="view-toggle">
         <div
           className={`view-option ${view === 'map' ? 'active' : ''}`}
-          onClick={() => handleToggleView('map')}
+          onClick={() => setView('map')}
         >
           MAPA
         </div>
         <div
           className={`view-option ${view === 'list' ? 'active' : ''}`}
-          onClick={() => handleToggleView('list')}
+          onClick={() => setView('list')}
         >
           LISTADO DE TIENDAS
         </div>
@@ -40,11 +39,22 @@ function Tiendas() {
 
       {/* Mostrar mapa o listado según el estado */}
       {view === 'map' ? (
-        <MapView />
+        <MapView selectedStore={selectedStore} />
       ) : (
+
+        <div>
+
+        <div>
+        <p className='subtitulo'>Seleccioná una tienda para ver su ubicación en el mapa</p>
+        </div>
+
         <div className="tienda-list">
           {DataTiendas.map((tienda) => (
-            <div className="tienda-card" key={tienda.id}>
+            <div 
+              className="tienda-card" 
+              key={tienda.id} 
+              onClick={() => handleSelectStore(tienda)}
+            >
               <img src={imgTienda} alt="tienda" className="tienda-img" />
               <div className="tienda-info">
                 <h4 className="tienda-nombre">{tienda.nombre}</h4>
@@ -53,6 +63,7 @@ function Tiendas() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       )}
     </section>
