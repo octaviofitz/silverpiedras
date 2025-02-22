@@ -10,6 +10,7 @@
     font-size: 1.5rem;
     position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
     text-align: center;
+    font-weight: 700;
 }
 
 .distribuidor .titulo::after{
@@ -34,10 +35,16 @@
     background-color: #004E6F;
     color: white;
     border-radius: 10px;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     padding: 0.35rem 1rem;
     margin-bottom: 0.75rem;
     border: none;
+    text-decoration: none;
+}
+
+.distribuidor a{
+    text-decoration: none;
+    color: white;
 }
 
 .distribuidor .boton:hover{
@@ -82,6 +89,10 @@
         border-color: rgba(0,78,111,1) transparent transparent transparent;
         border-radius: 50%/100px 100px 0 0;
         text-align: left;
+    }
+
+    .distribuidor .boton{
+        font-size: 1.45rem;
     }
     
 }
