@@ -4,12 +4,14 @@ import './distribuidores.css';
 function Distribuidores() {
     return (
         <section className='distribuidor'>
-            <div className='containerTexto'>
-            <h3 className='titulo'>Vender SILVER</h3>
-            <p className='texto'>¿Tenés un petshop, una veterinaria o sos distribuidor y querés vender Silver?</p>
+        <div class="card">
+            <div>
+            <h4 className='titulo'>¿Sos vendedor o distribuidor?</h4>
             </div>
-            <div className='containerBoton'>
-            <button className='boton'><a href='https://api.whatsapp.com/send/?phone=1159300042' target='__blanck'>Contactanos</a></button>
+            <div>
+                <p className='mobileText'>Si estás interesado en vender o distribuir <strong>Silver</strong><strong> hacé click aquí para contactarnos</strong>.</p>
+            <p className='texto'>Si estás interesado en vender o distribuir <strong>Silver</strong>, nuestra exclusiva línea de bentonita y diatomita, <strong>hacé click aquí para contactarnos</strong>. Te brindaremos toda la información necesaria y responderemos a la brevedad para que puedas sumarte a nuestra red de distribuidores.</p>
+            </div>  
             </div>
         </section>
     );

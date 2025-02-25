@@ -1,98 +1,142 @@
-.distribuidor{
-    margin: 0 10vw;
-    padding: 1rem;
+.distribuidor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Ocupa todo el ancho */
+    margin-top: -1.5rem;
+}
+  
+.distribuidor .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border-radius: 10px;
-}
-
-.distribuidor .titulo{
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 85vw; /* Para mobile */
+    max-width: 90vw; /* Evita que se achique */
+    height: 220px;
+    background-color: #004E6F;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 1s ease-in;
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
-    text-align: center;
-    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-
-.distribuidor .titulo::after{
+  
+.distribuidor .card::before {
     content: "";
     position: absolute;
-    bottom: -10px; /* Ajusta esto para que coincida con la altura del subrayado */
-    left: 50%;
-    transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
-    width: 32vw; /* Asegura que el subrayado cubra todo el texto */
-    height: 6px; /* Ajusta esto para cambiar la espesor del subrayado */
-    background-color: rgba(0,78,111,1); /* Color del subrayado */
-    border: solid 1px rgba(0,78,111,1);
-    border-color: rgba(0,78,111,1) transparent transparent transparent;
-    border-radius: 50%/100px 100px 0 0;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #1CA4CB;
+    height: 220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 1s ease-out;
+}
+  
+/* Restaurando el efecto hover */
+.distribuidor .card:hover::before {
+    transition-delay: 1s;
+    transform: scale(100);
+}
+  
+.distribuidor .card:hover {
+    color: #fff;
+}
+  
+.distribuidor .card .titulo {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-top: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+  
+.distribuidor .card p {
+    padding: 10px 0;
+    text-align: left;
+    margin-top: 0.5rem;
 }
 
-.distribuidor .texto{
-    font-size: 1.1rem;
-}
+.distribuidor .card .texto{
+    display: none;
 
-.distribuidor .boton{
-    background-color: #004E6F;
-    color: white;
-    border-radius: 10px;
-    font-size: 1.25rem;
-    padding: 0.35rem 1rem;
-    margin-bottom: 0.75rem;
-    border: none;
-    text-decoration: none;
-}
-
-.distribuidor a{
-    text-decoration: none;
-    color: white;
-}
-
-.distribuidor .boton:hover{
-    background-color: #1CA4CB;
 }
 
 @media (min-width: 768px){
 
-    .distribuidor .titulo::after{
-        width: 14vw; /* Asegura que el subrayado cubra todo el texto */
+    .distribuidor .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: -1rem;
     }
 
-    .distribuidor .texto{
-        font-size: 1.1rem;
+    .distribuidor .card .titulo{
+        font-size: 2rem;
     }
-    
+
+    .distribuidor .card .mobileText{
+        display: none;
+    }
+
+    .distribuidor .card .texto{
+        display: block;
+        width: 1.25;
+        margin-left: 1.25rem;
+    }
 }
 
-@media (min-width: 1024px){
-    .distribuidor{
+/* 🔹 Ajuste en pantallas grandes */
+@media (min-width: 1024px) {
+    .distribuidor {
+        width: 100vw; /* Ocupa todo el ancho */
+        margin-top: -10rem;
+    }
+
+    .distribuidor .card {
+        width: 70vw !important;
+        max-width: 70vw !important; /* Asegura que tome el ancho */
+        height: 220px; /* Ajusta la altura si es necesario */
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-        margin-top: -8rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        opacity: 0.9;
+        margin-top: 2rem;
     }
 
-    .distribuidor .titulo{
-        font-size: 2.25rem;
-        font-weight: 700;
+    .distribuidor .card .titulo{
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+        margin-left: 4vw;
+        font-family: 'Franklin';
     }
 
-    .distribuidor .titulo::after{
-        content: "";
-        position: absolute;
-        bottom: -10px; /* Ajusta esto para que coincida con la altura del subrayado */
-        left: 50%;
-        transform: translateX(-50%) skewX(-25deg); /* Inclina el subrayado */
-        width: 8vw; /* Asegura que el subrayado cubra todo el texto */
-        height: 6px; /* Ajusta esto para cambiar la espesor del subrayado */
-        background-color: rgba(0,78,111,1); /* Color del subrayado */
-        border: solid 1px rgba(0,78,111,1);
-        border-color: rgba(0,78,111,1) transparent transparent transparent;
-        border-radius: 50%/100px 100px 0 0;
+    .distribuidor .card .texto{
+        margin: 0;
+        padding: 0;
         text-align: left;
+        font-size:  1.35vw;
+        margin-left: 5rem;
+        font-family: 'Franklin';
+        display: block;
     }
 
-    .distribuidor .boton{
-        font-size: 1.45rem;
+    .distribuidor .card .mobileText{
+        display: none;
     }
-    
 }
