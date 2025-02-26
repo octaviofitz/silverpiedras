@@ -1,125 +1,48 @@
-.producto{
-    background-color: #eeeeee;
-    padding: 2rem 0;
-}
-
-.producto .titulo{
-    font-weight: 900;
-    padding-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.producto .container{
-    display: flex;
-    flex-direction: column;
-}
-
-.producto #Container{
-    padding: 2rem 0;
-}
-
-.producto .container .img{
-    width: 80vw;
-    background-color: #fff;
-    border-radius: 10%;
-    padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.producto .container .textos .subtitulo{
-    color: #004E6F;
-    padding-top: 2rem;
-    font-size: 2.5rem;
-    
-}
-
-
-.producto .container .textos .descripcion{
-    margin: 1rem 1.75rem;
-    font-size: 1.3rem;
-}
-
-.producto .container .textos .lista{
-    text-align: left;
-    margin: 1rem;
-}
-
-.producto .container .textos .lista .items{
-    font-size: 1.3rem;
-}
-
-.producto .banner{
-    width: 90vw;
-    border-radius: 10px 10px 10px 10px;
+.bentonita{
     margin-bottom: 2rem;
+}
+
+.bentonita .producto .img{
+    width: 40vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.bentonita .producto{
+    background-color: #692d87;
+    border-radius: 10px;
+    margin: 1rem 2rem 3rem;
+    opacity: 0.9;
+    color: white;
+    padding: 2rem 0.25rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-@media (min-width: 768px){
-    .producto .banner{
-        width: 70vw;
-        margin: 2rem 0;
-    }
+.bentonita .producto .titulo{
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Franklin';
+    font-weight: 700;
+}
 
-    .producto .container .img{
-        width: 60vw;
-    }
+.bentonita .producto .texto{
+    text-align: left;
+    padding: 0rem 1rem 0rem;
+    margin-bottom: -0.25rem;
 }
 
 
 @media (min-width: 1024px){
-    .producto .container{
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
-    .producto #Container2 .textos{
-        margin-left: 5vw;
-    }
-
-    .producto #Container{
-        flex-direction: row-reverse;
-    }
-
-    .producto #Container .textos{
-        padding-top: 1rem;
-        margin-left: 0vw;
-    }
-
-    .producto #Container .textos .subtitulo,
-    .producto #Container .textos .descripcion{
-        margin-right: 6rem;
-    }
-
-    .producto .container .textos{
-        margin-top: 1vh;
-        text-align: left;
-    }
-
-    .producto .container .textos .subtitulo{
-        font-weight: 900;
-        margin-left: 5rem;
-        margin-bottom: 1.5rem;
-        font-size: 2.75rem;
-    }
-
-    .producto .container .textos .lista .items{
-        font-size: 1.3vw;
-        margin-left: 3vw;
-    }
-
-    .producto .container .textos .descripcion{
-        margin-left: 5rem;
-        font-size: 1.5vw;
-    }
-
-    .producto .container .img{
-        width: 35vw;
-    }
+.bentonita {
 }
 
-@media (min-width: 1440px){
-    .producto .container .textos{
-        margin-top: 2.5vh;
-    }
+.bentonita .producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 }

@@ -1,12 +1,7 @@
 import React from 'react';
-
-import Card1 from '../../IMG/Cards/Card1.webp';
-import Card2 from '../../IMG/Cards/Card2.webp';
-import Flecha from '../../IMG/Varios/Flecha.webp'
+import CardsComponent from '../CardsComponent/CardsComponent';
 
 import './cards.css';
-import { Link } from 'react-router-dom';
-import CardsComponent from '../Prueba/CardsComponent';
 
 function Cards() {
     return (

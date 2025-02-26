@@ -16,7 +16,7 @@
     filter: drop-shadow(0 5px 10px 0 #ffffff);
     width: 85vw; /* Para mobile */
     max-width: 90vw; /* Evita que se achique */
-    height: 220px;
+    height: 190px;
     background-color: #004E6F;
     padding: 2rem 1rem;
     position: relative;
@@ -58,9 +58,11 @@
     margin: 0;
     font-size: 1.4rem;
     text-align: left;
-    margin-top: 2rem;
     font-weight: 700;
     margin-top: 0.5rem;
+    display: flex;
+    margin-left: -2rem;
+    justify-content: left;
 }
   
 .distribuidor .card p {
