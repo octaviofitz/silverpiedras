@@ -1,125 +1,111 @@
 .diatomita{
-    background-color: #eeeeee;
-    padding: 2rem 0;
-}
-
-.diatomita .titulo{
-    font-weight: 900;
-    padding-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.diatomita .container{
-    display: flex;
-    flex-direction: column;
-}
-
-.diatomita #Container{
-    padding: 2rem 0;
-}
-
-.diatomita .container .img{
-    width: 80vw;
-    background-color: #fff;
-    border-radius: 10%;
-    padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.diatomita .container .textos .subtitulo{
-    color: #004E6F;
-    padding-top: 2rem;
-    font-size: 2.5rem;
-    
-}
-
-
-.diatomita .container .textos .descripcion{
-    margin: 1rem 1.75rem;
-    font-size: 1.3rem;
-}
-
-.diatomita .container .textos .lista{
-    text-align: left;
-    margin: 1rem;
-}
-
-.diatomita .container .textos .lista .items{
-    font-size: 1.3rem;
-}
-
-.diatomita .banner{
-    width: 90vw;
-    border-radius: 10px 10px 10px 10px;
     margin-bottom: 2rem;
+}
+
+.diatomita  .img{
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.diatomita {
+    background-color: #004E6F;
+    border-radius: 10px;
+    margin: 1rem 2rem 3rem;
+    opacity: 0.9;
+    color: white;
+    padding: 2rem 0.25rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.diatomita  .titulo{
+    text-align: left;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: 'Franklin';
+    font-weight: 700;
+}
+
+.diatomita  .texto{
+    text-align: left;
+    padding: 0rem 1rem 0rem;
+    margin-bottom: -0.25rem;
 }
 
 @media (min-width: 768px){
-    .diatomita .banner{
-        width: 70vw;
-        margin: 2rem 0;
+    
+    .diatomita {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 2rem;
     }
 
-    .diatomita .container .img{
-        width: 60vw;
+    .diatomita  .img{
+        width: 25vw;
     }
+
+    .diatomita  .data{
+        margin-top: -2rem;
+        margin-left: 3rem;
+    }
+
+    .diatomita  .data .titulo{
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    .diatomita  .data .texto{
+        font-size: 1.15rem;
+    }
+
 }
 
 
 @media (min-width: 1024px){
-    .diatomita .container{
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
-    .diatomita #Container2 .textos{
-        margin-left: 5vw;
-    }
-
-    .diatomita #Container{
-        flex-direction: row-reverse;
-    }
-
-    .diatomita #Container .textos{
-        padding-top: 1rem;
-        margin-left: 0vw;
-    }
-
-    .diatomita #Container .textos .subtitulo,
-    .diatomita #Container .textos .descripcion{
-        margin-right: 6rem;
-    }
-
-    .diatomita .container .textos{
-        margin-top: 1vh;
-        text-align: left;
-    }
-
-    .diatomita .container .textos .subtitulo{
-        font-weight: 900;
-        margin-left: 5rem;
-        margin-bottom: 1.5rem;
-        font-size: 2.75rem;
-    }
-
-    .diatomita .container .textos .lista .items{
-        font-size: 1.3vw;
-        margin-left: 3vw;
-    }
-
-    .diatomita .container .textos .descripcion{
-        margin-left: 5rem;
-        font-size: 1.5vw;
-    }
-
-    .diatomita .container .img{
-        width: 35vw;
-    }
+.diatomita {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem 8vw;
+    height: 100%;
 }
 
-@media (min-width: 1440px){
-    .diatomita .container .textos{
-        margin-top: 2.5vh;
+.diatomita  .img{
+    width: 30vw;
+    margin-top: 2rem;
+}
+
+.diatomita  .data{
+    margin-left: 6vw;
+    padding-right: 2rem;
+}
+}
+
+@media (min-width: 1280px){
+
+    .diatomita{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
+
+    .diatomita {
+        padding: 8vh 8vw;
+    }
+
+    .diatomita  .img{
+        width: 25vw;
+    }
+    
+    .diatomita  .data{
+        margin-left: 10vw;
+    }
+
+    .diatomita  .data .titulo{
+        font-size: 4rem;
+    }
+
 }

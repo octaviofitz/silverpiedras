@@ -23,8 +23,8 @@ function Router() {
                 <Route path="/" element={<Index />} />
                 <Route path="/bentonita" element={<Bentonita />} />
                 <Route path="/diatomita" element={<Diatomita />} />
-                <Route path="/recomendaciones" element={<Recomendaciones />} />
-            </Routes>
+{/*                 <Route path="/recomendaciones" element={<Recomendaciones />} />
+ */}            </Routes>
             <Footer />
         </BrowserRouter>
     );

@@ -30,8 +30,8 @@ function BasicExample() {
           <Nav className="ms-auto">
           <Nav.Link as={Link} to="/bentonita" className='links' onClick={toggleNavbar}>Bentonita</Nav.Link>
             <Nav.Link as={Link} to="/diatomita" className='links' onClick={toggleNavbar}>Diatomita</Nav.Link>
-            <Nav.Link as={Link} to="/recomendaciones" className='links' onClick={toggleNavbar}>Recomendaciones</Nav.Link>
-          </Nav>
+{/*             <Nav.Link as={Link} to="/recomendaciones" className='links' onClick={toggleNavbar}>Recomendaciones</Nav.Link>
+ */}          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
