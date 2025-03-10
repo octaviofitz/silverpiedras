@@ -13,7 +13,7 @@ function Diatomita() {
                     </div>
                     <div className="data">
                         <h2 className="titulo">Diatomita</h2>
-                        <p className="texto">Silver posee una gran cualidad de absorción debido a su estructura porosa y a la alta pureza del mineral. Los microporos internos, favorecen la retención e inhibición de bacterias causantes del mal olor en la bandeja sanitaria. Silver está realizado a base de diatomita.</p>
+                        <p className="texto">Nuestra Diatomita para Gatos es una alternativa natural y ultraabsorbente para el arenero de tu mascota. Gracias a su composición liviana y porosa, controla eficazmente la humedad y neutraliza los olores, manteniendo el ambiente fresco por más tiempo. Además, es biodegradable y libre de químicos, ideal para quienes buscan una opción ecológica y segura.</p>
                     </div>
                 </article>
     );
