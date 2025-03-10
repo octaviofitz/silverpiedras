@@ -4,7 +4,7 @@ import './distribuidores.css';
 function Distribuidores() {
     return (
         <section className='distribuidor'>
-            <a href='https://www.google.com.ar' target='__black'>
+            <a href="https://api.whatsapp.com/send?phone=+541156997816&text=Hola" target='__black'>
             <div className="card">
                 <div className="contenido">
                     <h4 className="titulo">¿Querés vender Silver?</h4>
