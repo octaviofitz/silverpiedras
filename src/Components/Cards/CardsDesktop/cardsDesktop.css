@@ -1,0 +1,97 @@
+.CardsDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .CardsDesktop {
+    display: inline;
+  }
+
+  .CardsDesktop .titulo {
+    position: relative;
+    text-align: center;
+    color: inherit;
+    margin: 5rem 1rem 3rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  .CardsDesktop .titulo .subrayado {
+    position: relative;
+    color: inherit;
+  }
+
+  .CardsDesktop .titulo .subrayado::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) skewX(-25deg);
+    width: 9vw;
+    height: 7px;
+    background-color: rgba(0, 78, 111, 1);
+    border: solid 1px rgba(0, 78, 111, 1);
+    border-color: rgba(0, 78, 111, 1) transparent transparent transparent;
+    border-radius: 50% / 100px 100px 0 0;
+  }
+
+  .CardsDesktop .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3vh;
+  }
+
+  .CardsDesktop .container .articuloBentonita,
+  .CardsDesktop .container .articuloDiatomita {
+    position: relative;
+    cursor: pointer;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  .CardsDesktop .container .articuloBentonita {
+    background-color: #007766;
+    padding: 2.25vw 7vw;
+  }
+
+  .CardsDesktop .container .articuloDiatomita {
+    background-color: #004e6f;
+    padding: 3vw;
+    margin-left: 1rem;
+  }
+
+  .CardsDesktop .img1 {
+    width: 12vw;
+  }
+
+  .CardsDesktop .img2 {
+    width: 22vw;
+  }
+
+  /* Overlay de texto */
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    transition: opacity 0.7s ease;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  /* Mostrar overlay al hacer hover */
+  .articuloBentonita:hover .overlay-text,
+  .articuloDiatomita:hover .overlay-text {
+    opacity: 1;
+  }
+}
